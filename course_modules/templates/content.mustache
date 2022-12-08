@@ -1,0 +1,44 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{# data}}
+<div class="content-wrap">
+    <span>{{cmid}} - </span>
+    <a href="{{config.wwwroot}}/mod/{{module}}/view.php?id={{cmid}}" title="{{modulename}}">{{modulename}}</a> - 
+    <span>{{cmadded}}</span>  
+    <span class="text-success">{{#completed}} - <b>Completed</b>{{/completed}}</span>
+</div>
+{{/ data}}
+<!--<table>
+    <thead>
+        <tr>
+            <th>{{#str}}cmid, block_course_modules{{/str}}</th>
+            <th>{{#str}}modname, block_course_module{{/str}}Module Name</th>
+            <th>{{#str}}modadded, block_course_modules{{/str}}Created D</th>
+            <th>{{#str}}completionstatus, block_course_modules{{/str}}Created D</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{# data}}
+          <tr>
+            <td><span>{{cmid}}</span></td>
+            <td><a href="{{config.wwwroot}}/mod/{{module}}/view.php?id={{cmid}}" title="{{modulename}}">{{modulename}}</a></td>
+            <td><span>{{cmadded}}</span></td>
+            <td><span>{{#completed}}Completed{{/completed}}</span></td>
+          </tr>
+        {{/ data}}
+    </tbody>
+</table>-->
